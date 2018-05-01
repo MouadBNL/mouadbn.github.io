@@ -38,7 +38,7 @@ header.black{
 	background-color: #1e2022;
 	height: 50px;
 }
-@media screen and (max-width: 700px) and (orientation: portrait){
+@media screen and (max-width: 700px){
 	header.black{
 		height: 100px;
 		padding: 10px;
@@ -48,7 +48,7 @@ header.black{
 		text-align: center;
 	}
 }
-@media handheld{
+@media handheld and (orientation: portrait){
 	header.black{
 		height: 100px;
 		padding: 10px;
@@ -130,7 +130,7 @@ header div{
 	margin-top: 60px;
 	margin-bottom: 150px;
 }
-@media screen and (max-width: 700px){
+/*@media screen and (max-width: 700px){
 	.banner_title{
 		margin-top: 250px;
 		margin-bottom: 100px;
