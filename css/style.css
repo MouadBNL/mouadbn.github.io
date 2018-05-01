@@ -14,9 +14,29 @@ header{
 	height: 100px;
 	transition-duration: 0.4s;
 }
+@media screen and (max-width: 700px){
+	header{
+		height: 200px;
+		padding: 10px;
+	}
+	header span{
+		display: block;
+		text-align: center;
+	}
+}
 header.black{
 	background-color: #1e2022;
 	height: 50px;
+}
+@media screen and (max-width: 700px){
+	header.black{
+		height: 100px;
+		padding: 10px;
+	}
+	header span{
+		display: block;
+		text-align: center;
+	}
 }
 header div{
 	width: 90%;
@@ -72,8 +92,6 @@ header div{
 	margin: auto;
 	margin-top: 280px;
 	margin-bottom: 30px;
-}
-.btn_email p{
 	color: #E7E7E7;
 	text-align: center;
 	line-height: 30px;
@@ -91,6 +109,19 @@ header div{
 	font-size: 36px;
 	margin-top: 60px;
 	margin-bottom: 150px;
+}
+@media screen and (max-width: 700px){
+	.banner_title{
+		margin-top: 250px;
+		margin-bottom: 100px;
+	}
+	.btn_email{
+		width: 60%;
+	}
+	.socila_media{
+		width: 80%;
+		margin-top: 100px;
+	}
 }
 /* COMPETENCE */
 .competence{
@@ -285,6 +316,27 @@ header div{
 	font-size: 18px;
 	font-weight: 400;
 
+}
+/*Letter spacing*/
+@media screen and (max-width: 700px){
+	.abt{
+		letter-spacing: 10px;
+	}
+	.exp{
+		letter-spacing: 10px;
+	}
+	.fmt{
+		letter-spacing: 10px;
+	}
+	.pgtm{
+		letter-spacing: 10px;
+	}
+	.dsg{
+		letter-spacing: 10px;
+	}
+	.ctc{
+		letter-spacing: 10px;
+	}
 }
 /*FOOTER*/
 footer{
