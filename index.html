@@ -117,11 +117,12 @@
 		var pgb_html = $('div.pgb_html');
 		var doc = $(document);
 		//Html Progress bar
-		var pgb_html_o = pgb_html.offset().top/2;
+		var pgb_html_o = pgb_html.offset().top/2 - 100;
 		//css Progress bar
 		var pgb_css = $('div.pgb_css');
 		//js Progress bar
 		var pgb_js = $('div.pgb_js');
+		var pgb_js_o = pgb_js.offset().top/2 - 100;
 		//php Progress bar
 		var pgb_php = $('div.pgb_php');
 		$(window).on('scroll', function() {
@@ -137,12 +138,16 @@
 				pgb_html.addClass('active');
 				pgb_css.removeClass('hidden');
 				pgb_css.addClass('active');
-				pgb_js.removeClass('hidden');
-				pgb_js.addClass('active');
 				pgb_php.removeClass('hidden');
 				pgb_php.addClass('active');
 			}
+			if (doc.scrollTop() > pgb_js_o && pgb_js.hasClass('hidden')) {
+				pgb_js.removeClass('hidden');
+				pgb_js.addClass('active');
+			}
 		})
+		console.log(pgb_js_o);
+		console.log(pgb_js_o);
 	</script>
 </body>
 </html>

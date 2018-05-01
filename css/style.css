@@ -23,13 +23,32 @@ header{
 		display: block;
 		text-align: center;
 	}
-}	}
+}
+@media handheld and (orientation: portrait){
+	header{
+		height: 200px;
+		padding: 10px;
+	}
+	header span{
+		display: block;
+		text-align: center;
+	}
 }
 header.black{
 	background-color: #1e2022;
 	height: 50px;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) and (orientation: portrait){
+	header.black{
+		height: 100px;
+		padding: 10px;
+	}
+	header span{
+		display: block;
+		text-align: center;
+	}
+}
+@media handheld{
 	header.black{
 		height: 100px;
 		padding: 10px;
@@ -123,6 +142,18 @@ header div{
 		width: 80%;
 		margin-top: 100px;
 	}
+}
+@media handheld and (orientation: portrait){
+	.banner_title{
+		margin-top: 250px;
+		margin-bottom: 100px;
+	}
+	.btn_email{
+		width: 60%;
+	}
+	.socila_media{
+		width: 80%;
+	
 }
 /* COMPETENCE */
 .competence{
@@ -337,6 +368,26 @@ header div{
 	}
 	.ctc{
 		letter-spacing: 10px;
+	}
+}
+@media handheld and (orientation: portrait){
+	.abt{
+		letter-spacing: 3px;
+	}
+	.exp{
+		letter-spacing: 3px;
+	}
+	.fmt{
+		letter-spacing: 3px;
+	}
+	.pgtm{
+		letter-spacing: 3px;
+	}
+	.dsg{
+		letter-spacing: 3px;
+	}
+	.ctc{
+		letter-spacing: 3px;
 	}
 }
 /*FOOTER*/
