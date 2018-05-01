@@ -98,6 +98,12 @@ header div{
 	font-family: 'Lato', sans-serif;
 	font-weight: 600;
 	font-size: 18px;
+	transition-duration: 1s;
+}
+.btn_email:hover{
+	background-color: #E7E7E7;
+	color: black;
+	border-color: rgba(231,231,231,0.2);
 }
 .socila_media{
 	margin: auto;
@@ -109,6 +115,9 @@ header div{
 	font-size: 36px;
 	margin-top: 60px;
 	margin-bottom: 150px;
+}
+.socila_media a{
+	color: #E7E7E7;
 }
 @media screen and (max-width: 700px){
 	.banner_title{
@@ -315,7 +324,9 @@ header div{
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
-
+}
+.moyen_ctc a{
+	color: #2980b9;
 }
 /*Letter spacing*/
 @media screen and (max-width: 700px){
