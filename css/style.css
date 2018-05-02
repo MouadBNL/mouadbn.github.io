@@ -222,7 +222,7 @@ header div{
 	background-color: #C9D6DF;
 }
 .abt{
-	letter-spacing: 30px;
+	letter-spacing: 10px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
@@ -244,7 +244,7 @@ header div{
 	padding: 50px;
 }
 .exp{
-	letter-spacing: 30px;
+	letter-spacing: 10px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
@@ -278,7 +278,7 @@ header div{
 	padding: 50px;
 }
 .fmt{
-	letter-spacing: 30px;
+	letter-spacing: 10px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
@@ -286,7 +286,7 @@ header div{
 	margin: 10px;
 }
 .dsg, .pgmt{
-	letter-spacing: 15px;
+	letter-spacing: 10px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 600;
 	text-align: center;
@@ -308,7 +308,7 @@ header div{
 	padding: 50px;
 }
 .ctc{
-	letter-spacing: 30px;
+	letter-spacing: 10px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
