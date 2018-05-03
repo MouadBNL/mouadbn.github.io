@@ -62,10 +62,12 @@ header div{
 }
 /* BODY */
 .block_page{
-	background-image: url('../imgs/bg.png');
+	/* background-image: url('../imgs/bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
+	min-height: 400px;
+    background: transparent;
 }
 /* BANNER */
 .banner{
