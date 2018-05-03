@@ -288,7 +288,7 @@ header div{
 	margin: 10px;
 }
 .dsg, .pgmt{
-	letter-spacing: 80px;
+	letter-spacing: 10px;
 	font-family: 'Lato', sans-serif;
 
 	font-weight: 600;
@@ -363,4 +363,7 @@ footer p{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	line-height: 100px;
+}
+.fa{
+	margin-right: 10px;
 }
