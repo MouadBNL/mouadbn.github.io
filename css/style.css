@@ -234,7 +234,7 @@ header div{
 .abt_p{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	width: 40%;
+	width: 60%;
 	font-size: 18px;
 	margin: 20px;
 	text-align: center;
@@ -254,7 +254,7 @@ header div{
 	margin: 10px;
 }
 .exp_p{
-	width: 40%;
+	width: 60%;
 	font-size: 18px;
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
@@ -290,6 +290,7 @@ header div{
 .dsg, .pgmt{
 	letter-spacing: 10px;
 	font-family: 'Lato', sans-serif;
+
 	font-weight: 600;
 	text-align: center;
 	font-size: 22px;
@@ -298,7 +299,7 @@ header div{
 .dsg_p, .pgmt_p{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	width: 40%;
+	width: 60%;
 	font-size: 18px;
 	margin: 20px;
 	text-align: center;
