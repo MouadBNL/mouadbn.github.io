@@ -16,6 +16,7 @@ header{
 	padding: 0 25px;
 	height: 100px;
 	transition-duration: 0.4s;
+	z-index: 1;
 }
 @media screen and (max-width: 700px){
 	header{
@@ -65,10 +66,6 @@ header div{
 }
 /* BODY */
 .block_page{
-	/* background-image: url('../imgs/bg.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;*/
 	min-height: 400px;
     background: transparent;
 }
@@ -138,6 +135,7 @@ header div{
 	}
 }
 /* COMPETENCE */
+/*Animation*/
 .competence{
 	background-color: #E7E7E7;
 	display: flex;
@@ -152,6 +150,15 @@ header div{
 }
 .comp img{
 	margin: 5px;
+	transition-duration: 1.2s;
+}
+.img_disable{
+	transform: rotateY(-270deg);
+	background: transparent;
+}
+.img_active{
+	transform: rotateY(0deg);
+	z-index: -0;
 }
 .comp .progress{
 	height: 10px;

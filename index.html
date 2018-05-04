@@ -44,25 +44,25 @@
 		</section>
 		<section class="competence">
 			<div class="comp html">
-				<img src="imgs/html.png" height="100px" alt="img_html"><br>
+				<img class="img_html img_disable" src="imgs/html.png" height="100px" alt="img_html"><br>
 				<div class="progress">
 					<div class="pgb_html hidden"></div>
 				</div>
 			</div>
 			<div class="comp css">
-				<img src="imgs/css.png" height="100px" alt="img_css"><br>
+				<img class="img_css img_disable" src="imgs/css.png" height="100px" alt="img_css"><br>
 				<div class="progress">
 					<div class="pgb_css hidden"></div>
 				</div>
 			</div>
 			<div class="comp js">
-				<img src="imgs/js.png" height="100px" alt="img_js"><br>
+				<img class="img_js img_disable" src="imgs/js.png" height="100px" alt="img_js"><br>
 				<div class="progress">
 					<div class="pgb_js hidden"></div>
 				</div>
 			</div>
 			<div class="comp php">
-				<img src="imgs/php.png" height="100px" alt="img_php"><br>
+				<img class="img_php img_disable" src="imgs/php.png" height="100px" alt="img_php"><br>
 				<div class="progress">
 					<div class="pgb_php hidden"></div>
 				</div>
@@ -129,35 +129,6 @@
 		<p>Location : Morocco, Kenitra</p>
 	</footer>
 	<script type="text/javascript" src="js/forum.js"></script>
-	<script type="text/javascript">
-		var pgb_html = $('div.pgb_html');
-		var doc = $(document);
-		//Html Progress bar
-		var pgb_html_o = pgb_html.offset().top/2 - 100;
-		//css Progress bar
-		var pgb_css = $('div.pgb_css');
-		//js Progress bar
-		var pgb_js = $('div.pgb_js');
-		//php Progress bar
-		var pgb_php = $('div.pgb_php');
-		$(window).on('scroll', function() {
-			if ($(window).scrollTop()) {
-				$('header').addClass('black');
-			}else{
-				$('header').removeClass('black');
-			}
-			if (doc.scrollTop() > pgb_html_o && pgb_html.hasClass('hidden')){
-				pgb_html.removeClass('hidden');
-				pgb_html.addClass('active');
-				pgb_css.removeClass('hidden');
-				pgb_css.addClass('active');
-				pgb_php.removeClass('hidden');
-				pgb_php.addClass('active');
-				pgb_js.removeClass('hidden');
-				pgb_js.addClass('active');
-			}
-		})
-		//Formulair
-	</script>
+	<script type="text/javascript" src="js/scrolling.js"></script>
 </body>
 </html>
