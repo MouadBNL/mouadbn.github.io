@@ -163,7 +163,7 @@ header div{
 }
 /*Html progress bar*/
 .pgb_html.active{
-	width: 90%;
+	width: 70%;
 	height: 10px;
 	background-color: #F16529;
 	border-radius: 10px;
@@ -178,7 +178,7 @@ header div{
 }
 /*Css progress bar*/
 .pgb_css.active{
-	width: 85%;
+	width: 60%;
 	height: 10px;
 	background-color: #2965F1;
 	border-radius: 10px;
@@ -193,7 +193,7 @@ header div{
 }
 /*Js progressbar*/
 .pgb_js.active{
-	width: 35%;
+	width: 40%;
 	height: 10px;
 	background-color: #F1BF26;
 	border-radius: 10px;
@@ -208,7 +208,7 @@ header div{
 }
 /*Php progress bar*/
 .pgb_php.active{
-	width: 45%;
+	width: 30%;
 	height: 10px;
 	background-color: #9AA0C6;
 	border-radius: 10px;
