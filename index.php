@@ -1,3 +1,12 @@
+<?php
+	if (isset($_POST['user']) && isset($_POST['email']) && isset($_POST['message'])){
+		$to = "benali.mouadbn@gmail.com";
+		$subject = 'mail';
+		$message = 'From : '. htmlspecialchars($_POST['email']) .'\r\n' . 'Replay-to : '. htmlspecialchars($_POST['email']) . '\r\n' . 'Name : ' . htmlspecialchars($_POST['user']) . '\r\n' . 'X-Mailer: PHP/' . phpversion() .'\r\n'.htmlspecialchars($_POST['message']);
+		mail($to, $subject, $message);
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="eng">
 <head>
@@ -7,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="fonts/Earth_Orbiter_Regular/stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -16,7 +26,7 @@
 	<header>
 		<div>
 			<h1 class="header_title">Mouad Benali</h1>
-			<img src="imgs/logo.png" height="100px">
+			<img src="imgs/logo.png" height="80px">
 			<div class="menu">
 				<p><a href="#about"><span class="mn_about">About</span></a> <a href="#contact"><span class="mn_contacte">Contact me</span></a></p>
 			</div>
@@ -109,12 +119,17 @@
 			</div>
 		</section>
 		<section class="contact" id="contact">
-			<h3 class="ctc"><i class="fa fa-address-card" aria-hidden="true"></i>
- Contact</h3>
+			<h3 class="ctc"><i class="fa fa-address-card" aria-hidden="true"></i>Contact</h3>
+			<form class="f_contact" name="f_contact" method="POST" action="index.php">
+				<input class="frm c_user" type="text" name="user" name" value=""><br>
+				<input class ="frm c_email" type="email" name="email"><br>
+				<textarea class="frm c_message" name="message"></textarea>
+				<input class="c_send" type="submit">
+			</form>
 			<div class="moyen_ctc">
 				<p class="email">Email : benali.mouadbn@gmail.com<p>
-				<p class="email">Facebook : <a href="https://www.facebook.com/mouad.bnl.14">Mouad BN</a><p>
-				<p class="email">Twitter : <a href="https://twitter.com/benali_mouadbn">@benali_mouadbn</a><p>
+				<p class="facebook">Facebook : <a href="https://www.facebook.com/mouad.bnl.14">Mouad BN</a><p>
+				<p class="twitter">Twitter : <a href="https://twitter.com/benali_mouadbn">@benali_mouadbn</a><p>
 			</div>
 		</section>
 	</div>
@@ -122,6 +137,7 @@
 		<p>© 2018 Mouad Benali. All Rights Reserved.</p>
 		<p>Location : Morocco, Kenitra</p>
 	</footer>
+	<script type="text/javascript" src="js/forum.js"></script>
 	<script type="text/javascript">
 		var pgb_html = $('div.pgb_html');
 		var doc = $(document);
@@ -136,10 +152,8 @@
 		$(window).on('scroll', function() {
 			if ($(window).scrollTop()) {
 				$('header').addClass('black');
-				console.log("top");
 			}else{
 				$('header').removeClass('black');
-				console.log("ntop");
 			}
 			if (doc.scrollTop() > pgb_html_o && pgb_html.hasClass('hidden')){
 				pgb_html.removeClass('hidden');
@@ -152,6 +166,7 @@
 				pgb_js.addClass('active');
 			}
 		})
+		//Formulair
 	</script>
 </body>
 </html>

@@ -5,6 +5,9 @@
 a{
 	text-decoration: none;
 }
+.fa{
+	margin-right: 40px;
+}
 /* HEADER */
 header{
 	background-color: rgba(0,0,0,0);
@@ -47,16 +50,16 @@ header div{
 }
 .header_title{
 	color: #e7e7e7;
-	font-family: 'earth_orbiterregular', 'Lato', sans-serif;
+	font-family: 'earth_orbiterregular', 'Montserrat','Lato', sans-serif;
 	width: 300px;
 }
 .menu{
 	padding: 0 5px;
-	width: 180px;
+	width: 200px;
 }
 .menu span{
 	color: #e7e7e7;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	line-height: 50px;
 	margin: 0 10px;
 }
@@ -75,12 +78,12 @@ header div{
 }
 .banner_title{
 	margin-top: 100px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	color: #E7E7E7;
 	font-size: 36px;
 }
 .banner_stitle, .banner_stitle strong{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	color: #E7E7E7;
 	font-weight: 300;
 	margin: 70px 0;
@@ -97,7 +100,7 @@ header div{
 	color: #E7E7E7;
 	text-align: center;
 	line-height: 30px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 600;
 	font-size: 18px;
 	transition-duration: 1s;
@@ -127,7 +130,7 @@ header div{
 		margin-bottom: 100px;
 	}
 	.btn_email{
-		width: 60%;
+		width: 50%;
 	}
 	.socila_media{
 		width: 80%;
@@ -225,16 +228,16 @@ header div{
 }
 .abt{
 	letter-spacing: 10px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
 	margin: 10px;
 }
 .abt_p{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 400;
-	width: 60%;
+	width: 47%;
 	font-size: 18px;
 	margin: 20px;
 	text-align: center;
@@ -247,16 +250,16 @@ header div{
 }
 .exp{
 	letter-spacing: 10px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
 	margin: 10px;
 }
 .exp_p{
-	width: 60%;
+	width: 47%;
 	font-size: 18px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-style: italic;
 	text-align: center;
 	margin: 10px auto;
@@ -272,7 +275,7 @@ header div{
 	line-height: 200px;
 	color: white;
 	text-align: center;
-	font-family: 'lato', sans-serif;
+	font-family: 'Montserrat','lato', sans-serif;
 }
 /* FROMATION */
 .formation{
@@ -281,7 +284,7 @@ header div{
 }
 .fmt{
 	letter-spacing: 10px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
@@ -289,7 +292,7 @@ header div{
 }
 .dsg, .pgmt{
 	letter-spacing: 10px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 
 	font-weight: 600;
 	text-align: center;
@@ -297,9 +300,9 @@ header div{
 	margin: 20px;
 }
 .dsg_p, .pgmt_p{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 400;
-	width: 60%;
+	width: 47%;
 	font-size: 18px;
 	margin: 20px;
 	text-align: center;
@@ -312,7 +315,7 @@ header div{
 }
 .ctc{
 	letter-spacing: 10px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
@@ -324,7 +327,7 @@ header div{
 	margin: 80px auto 20px auto;
 }
 .moyen_ctc p{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 }
@@ -360,10 +363,62 @@ footer{
 footer p{
 	color: #E7E7E7;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 400;
 	line-height: 100px;
 }
-.fa{
-	margin-right: 40px;
+/* Forum */
+.f_contact{
+	width: 70%;
+	margin: auto;
+}
+.c_user{
+	width: 100%;
+	height: 25px;
+	border: solid 2px #333333;
+	padding: 10px;
+	margin: 5px auto;
+	border-radius: 6px;
+	font-family: 'Montserrat', 'lato', sans-serif;
+	font-size: 14px;
+}
+.c_email{
+	width: 100%;
+	height: 25px;
+	border: solid 2px #333333;
+	padding: 10px;
+	margin: 5px auto;
+	border-radius: 6px;
+	font-family: 'Montserrat', 'lato', sans-serif;
+	font-size: 14px;
+}
+.c_message{
+	width: 100%;
+	border: solid 2px #333333;
+	padding: 10px;
+	margin: 5px auto;
+	border-radius: 6px;
+	height: 100px;
+	font-family: 'Montserrat', 'lato', sans-serif;
+	font-size: 14px;
+}
+.c_send{
+	width: 20%;
+	margin: auto;
+	height: 26px;
+	background-color: #2ecc71;
+	font-family: 'Montserrat', 'lato', sans-serif;
+	font-weight: 800;
+	color: white;
+	border:none;
+}
+.vide{
+	-webkit-box-shadow: 0px 0px 3px 1px #e74c3c;
+	-moz-box-shadow: 0px 0px 3px 1px #e74c3c;
+	box-shadow: 0px 0px 3px 1px #e74c3c;
+}
+.valide{
+	-webkit-box-shadow: 0px 0px 3px 1px #2ecc71;
+	-moz-box-shadow: 0px 0px 3px 1px #2ecc71;
+	box-shadow: 0px 0px 3px 1px #2ecc71;
 }
