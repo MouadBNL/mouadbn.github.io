@@ -8,6 +8,11 @@ a{
 .fa{
 	margin-right: 40px;
 }
+
+
+
+
+
 /* HEADER */
 header{
 	background-color: rgba(0,0,0,0);
@@ -64,6 +69,11 @@ header div{
 	line-height: 50px;
 	margin: 0 10px;
 }
+
+
+
+
+
 /* BODY */
 .block_page{
 	min-height: 400px;
@@ -134,6 +144,11 @@ header div{
 		margin-top: 100px;
 	}
 }
+
+
+
+
+
 /* COMPETENCE */
 /*Animation*/
 .competence{
@@ -228,20 +243,38 @@ header div{
 	border-radius: 10px;
 	transition-duration: 1s;
 }
+
+
+
+
+
 /* ABOUT */
 .about{
 	padding: 50px;
 	background-color: #C9D6DF;
 }
-.abt{
-	letter-spacing: 10px;
+.hidden .abt{
+	letter-spacing: 50px;
 	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
+	color: transparent;
 	margin: 10px;
+	transform: rotateX(-90deg);
+	transition-duration: 1s;
 }
-.abt_p{
+.active .abt{
+	letter-spacing: 10px;font-family: 'Montserrat','Lato', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	font-size: 28px;
+	color: rgba(0,0,0,1);
+	transform: rotateX(0deg);
+	margin: 10px;
+	transition-duration: 1s;
+}
+.hidden .abt_p{
 	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 400;
 	width: 47%;
@@ -249,33 +282,99 @@ header div{
 	margin: 20px;
 	text-align: center;
 	margin: 50px auto 20px auto;
+	transform: rotateX(-90deg);
+	color: rgba(0,0,0,0);
+	transition-duration: 1s;
 }
+.active .abt_p{
+	font-family: 'Montserrat','Lato', sans-serif;
+	font-weight: 400;
+	width: 47%;
+	font-size: 18px;
+	margin: 20px;
+	text-align: center;
+	margin: 50px auto 20px auto;
+	transform: rotateX(0deg);
+	color: rgba(0,0,0,1);
+	transition-duration: 1s;
+}
+
+
+
+
+
 /* EXPERIENCE */
 .experience{
 	background-color: #E7E7E7;
 	padding: 50px;
 }
-.exp{
-	letter-spacing: 10px;
+.hidden .exp{
+	letter-spacing: 50px;
 	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
 	margin: 10px;
+	transform: rotateZ(-30deg);
+	color: rgba(0,0,0,0);
+	transition-duration: 1s;
 }
-.exp_p{
+.hidden .exp_p{
 	width: 47%;
 	font-size: 18px;
 	font-family: 'Montserrat','Lato', sans-serif;
 	font-style: italic;
 	text-align: center;
 	margin: 10px auto;
+	transform: translateX(-200px);
+	color: rgba(0,0,0,0);
+	transition-duration: 1s;
 }
-.exp_exemple{
+.hidden .exp_exemple{
 	display: flex;
 	justify-content: space-around;
+	transform: translateY(200px);
+	transition-duration: 1s;
 }
-.ex1, .ex2{
+.hidden .ex1, .hidden .ex2{
+	width: 200px;
+	height: 200px;
+	background-color: rgba(0,0,0,0);
+	line-height: 200px;
+	color: rgba(0,0,0,0);
+	text-align: center;
+	font-family: 'Montserrat','lato', sans-serif;
+	transition-duration: 1s;
+}
+.active .exp{
+	letter-spacing: 10px;
+	font-family: 'Montserrat','Lato', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	font-size: 28px;
+	margin: 10px;
+	transform: rotateZ(0deg);
+	color: rgba(0,0,0,1);
+	transition-duration: 1s;
+}
+.active .exp_p{
+	width: 47%;
+	font-size: 18px;
+	font-family: 'Montserrat','Lato', sans-serif;
+	font-style: italic;
+	text-align: center;
+	margin: 10px auto;
+	transform: translateX(0px);
+	color: rgba(0,0,0,1);
+	transition-duration: 1s;
+}
+.active .exp_exemple{
+	display: flex;
+	justify-content: space-around;
+	transform: translateY(0px);
+	transition-duration: 1s;
+}
+.active .ex1, .active .ex2{
 	width: 200px;
 	height: 200px;
 	background-color: #1E2022;
@@ -283,30 +382,41 @@ header div{
 	color: white;
 	text-align: center;
 	font-family: 'Montserrat','lato', sans-serif;
+	transition-duration: 1s;
 }
+
+
+
+
+
 /* FROMATION */
 .formation{
 	background-color: #C9D6DF;
 	padding: 50px;
 }
-.fmt{
+.hidden .fmt{
 	letter-spacing: 10px;
 	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
 	margin: 10px;
+	transform: rotateX(-90deg);
+	color: rgba(0,0,0,0);
+	transition-duration: 1s;
 }
-.dsg, .pgmt{
+ .hidden .dsg, .hidden .pgmt{
 	letter-spacing: 10px;
 	font-family: 'Montserrat','Lato', sans-serif;
-
 	font-weight: 600;
 	text-align: center;
 	font-size: 22px;
 	margin: 20px;
+	transform: translateX(-300px);
+	color: rgba(0,0,0,0);
+	transition-duration: 1s;
 }
-.dsg_p, .pgmt_p{
+.hidden .dsg_p, .hidden .pgmt_p{
 	font-family: 'Montserrat','Lato', sans-serif;
 	font-weight: 400;
 	width: 47%;
@@ -314,7 +424,50 @@ header div{
 	margin: 20px;
 	text-align: center;
 	margin: auto;
+	transform: translateX(300px);
+	color: rgba(0,0,0,0);
+	transition-duration: 1s;
 }
+.active .fmt{
+	letter-spacing: 10px;
+	font-family: 'Montserrat','Lato', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	font-size: 28px;
+	margin: 10px;
+	transform: rotateX(0deg);
+	color: rgba(0,0,0,1);
+	transition-duration: 1s;
+}
+ .active .dsg, .active .pgmt{
+	letter-spacing: 10px;
+	font-family: 'Montserrat','Lato', sans-serif;
+
+	font-weight: 600;
+	text-align: center;
+	font-size: 22px;
+	margin: 20px;
+	transform: translateX(0px);
+	color: rgba(0,0,0,1);
+	transition-duration: 1s;
+}
+.active .dsg_p, .active .pgmt_p{
+	font-family: 'Montserrat','Lato', sans-serif;
+	font-weight: 400;
+	width: 47%;
+	font-size: 18px;
+	margin: 20px;
+	text-align: center;
+	margin: auto;
+	transform: translateX(0px);
+	color: rgba(0,0,0,1);
+	transition-duration: 1s;
+}
+
+
+
+
+
 /* CONTACT */
 .contact{
 	background-color: #E7E7E7;
@@ -362,18 +515,11 @@ header div{
 		letter-spacing: 10px;
 	}
 }
-/*FOOTER*/
-footer{
-	height: 200px;
-	background-color: #1E2022;
-}
-footer p{
-	color: #E7E7E7;
-	text-align: center;
-	font-family: 'Montserrat','Lato', sans-serif;
-	font-weight: 400;
-	line-height: 100px;
-}
+
+
+
+
+
 /* Forum */
 .f_contact{
 	width: 70%;
@@ -388,6 +534,7 @@ footer p{
 	border-radius: 6px;
 	font-family: 'Montserrat', 'lato', sans-serif;
 	font-size: 14px;
+	outline: none;
 }
 .c_email{
 	width: 100%;
@@ -398,6 +545,7 @@ footer p{
 	border-radius: 6px;
 	font-family: 'Montserrat', 'lato', sans-serif;
 	font-size: 14px;
+	outline: none;
 }
 .c_message{
 	width: 100%;
@@ -408,6 +556,7 @@ footer p{
 	height: 100px;
 	font-family: 'Montserrat', 'lato', sans-serif;
 	font-size: 14px;
+	outline: none;
 }
 .c_send{
 	width: 20%;
@@ -428,4 +577,21 @@ footer p{
 	-webkit-box-shadow: 0px 0px 3px 1px #2ecc71;
 	-moz-box-shadow: 0px 0px 3px 1px #2ecc71;
 	box-shadow: 0px 0px 3px 1px #2ecc71;
+}
+
+
+
+
+
+/*FOOTER*/
+footer{
+	height: 200px;
+	background-color: #1E2022;
+}
+footer p{
+	color: #E7E7E7;
+	text-align: center;
+	font-family: 'Montserrat','Lato', sans-serif;
+	font-weight: 400;
+	line-height: 100px;
 }
