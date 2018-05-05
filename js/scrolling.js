@@ -75,6 +75,24 @@ $(window).on('scroll', function() {
 })
 
 
+
+
+
+//arrow
+var arrow_o = pgb_html.offset().top/2 - 300;
+console.log(arrow_o);
+$(window).on('scroll', function() {
+	if (doc.scrollTop() > arrow_o && $('div.arrow').hasClass('hidden')){
+		$('div.arrow').removeClass('hidden');
+		$('div.arrow').addClass('active');
+	}
+	if (doc.scrollTop() < arrow_o && $('div.arrow').hasClass('active')){
+		$('div.arrow').removeClass('active');
+		$('div.arrow').addClass('hidden');
+	}
+})
+
+
 //about
 $(window).on('scroll', function() {
 	var about = $('section.about');

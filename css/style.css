@@ -8,6 +8,22 @@ a{
 .fa{
 	margin-right: 40px;
 }
+.hidden .arrow-up{
+	color: rgba(0,0,0,0);
+	transition-duration: 0.5s;
+}
+.active .arrow-up{
+	color: rgba(0,0,0,1);
+	transition-duration: 0.5s;
+}
+.arrow-up{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	font-size: 50px;
+	z-index: 2;
+	transition-duration: 1s;
+}
 
 
 
